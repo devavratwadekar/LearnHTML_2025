@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+    <style>
+        body{
+            background-color: #414141;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <h3>Image</h3>
+    
+    <img src="https://images.pexels.com/photos/18264716/pexels-photo-18264716/free-photo-of-man-in-headphones-showing-programming-process-on-a-laptop.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" height="400px" alt="Lear HTML coding">
+
+    <picture>
+        <source media="(min-width:450px)" srcset="./profile1.png">
+        <source media="(min-width:350px)" srcset="./profile2.png">
+        <img src="./profile.png" height="400px" alt="no image">
+    </picture>
+
+    <img src="./profil.png" alt="NO PROGILE IMAGE FOUND">
+
+    <!-- an image map generator -->
+    <img src="profile.png" usemap="#image-map">
+
+    <map name="image-map">
+        <area onclick="one()" target="" alt="" title="" href="" coords="272,105,110,16" shape="rect">
+        <area onclick="two()" target="" alt="" title="" href="" coords="159,108,430,257" shape="rect">
+        <area onclick="three()" target="" alt="" title="" href="" coords="470,149,620,315" shape="rect">
+    </map>
+
+    <script>
+        function one(){
+            alert("You clied on one")
+        }
+        function two(){
+            alert("You clied on two")
+        }
+        function three(){
+            alert("You clied on three")
+        }
+    </script>
+
+
+</body>
+</html>

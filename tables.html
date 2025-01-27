@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table{
+            width: 100%;
+            text-align: center;
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 1px solid black;
+        }
+        tr:nth-child(even){
+            background-color: #9f9f9f;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col span="2" style="background-color: blanchedalmond;"/>
+        </colgroup>
+        <tr>
+            <th>Country</th>
+            <th>Code</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>India</td>
+            <td>IN</td>
+            <td>india@google.com</td>
+        </tr>
+        <tr>
+            <td>United State of America</td>
+            <td>USA</td>
+            <td>usa@google.com</td>
+        </tr>
+        <tr>
+            <td>Japan</td>
+            <td>JP</td>
+            <td>japan@google.com</td>
+        </tr>
+        <tr>
+            <td>China</td>
+            <td>CN</td>
+            <td>cn@google.com</td>
+        </tr>
+    </table>
+
+    <br/>
+
+    <table style="width: 50%;">
+        <tr>
+            <th rowspan="2" style="width: 100px;">Details Students</th>
+            <th>Name</th>
+            <td>Sobodh</td>
+            <td>Pranav</td>
+            <td>Kunal</td>
+        </tr>
+        <tr>   
+            <th>Age</th>
+            <td>28</td>
+            <td>25</td>
+            <td>29</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Test Ecample</title>
+    <style>
+        table{
+            color: black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 4px;
+        }
+        tr:nth-child(odd){
+            background-color: #cccccc;
+        }
+        caption{
+            caption-side: bottom;
+            padding: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>
+            Front-end web developer course 2025
+        </caption>
+        <thead>
+            <tr style="background-color: #b5f4f4;">
+                <th>Person</th>
+                <th>Most interest in</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Chris</th>
+                <td>HTML tables</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <th>Dennis</th>
+                <td>Web accessiblility</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <th>Sarah</th>
+                <td>Javascript frameworks</td>
+                <td>29</td>
+            </tr>
+            <tr>
+                <th>Karen  </th>
+                <td>Web performance</td>
+                <td>22</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr style="background-color: #b5f4f4; font-weight: bold;">
+                <td colspan="2" style="text-align: right;">Average age</td>
+                <td>33</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

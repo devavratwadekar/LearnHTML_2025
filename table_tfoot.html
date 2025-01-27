@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table tfoot</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        thead,
+        tfoot {
+            background-color: #2c5e77;
+            color: #fff;
+        }
+        caption{
+            caption-side: bottom;
+            padding: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>
+            Council budget (in £) 2018
+        </caption>
+        <thead>
+            <tr>
+                <th>Items</th>
+                <th>Expenditure</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="font-weight: bold;">Donuts</td>
+                <td>3,000</td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold;">Stationery</td>
+                <td>18,000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>21,000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
